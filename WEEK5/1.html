@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sports News Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    /* ================= HEADER STYLES ================= */
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header nav {
+      margin-top: 0.5rem;
+    }
+    header nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    header nav a:hover {
+      color: #ff4b2b;
+    }
+
+    /* ================= MAIN CONTENT STYLES ================= */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      gap: 2rem;
+    }
+
+    .main-content {
+      flex: 3;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    .trending-topics {
+      flex: 1;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .trending-topics ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .trending-topics li {
+      margin-bottom: 1rem;
+    }
+
+    .trending-topics li a {
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .trending-topics li a:hover {
+      color: #ff4b2b;
+    }
+
+    .trending-topics p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+
+    /* ================= FOOTER STYLES ================= */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* ================= RESPONSIVE DESIGN ================= */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main-content,
+      .trending-topics {
+        flex: 1;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sports News Hub</h1>
+    <nav>
+      <a href="#scores">Live Scores</a>
+      <a href="#latest">Latest News</a>
+      <a href="#articles">Articles</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="main-content">
+      <section id="scores" class="scoreboard">
+        <h2>Live Scores</h2>
+        <div>INDIA 387 – ENG 387</div>
+      </section>
+
+      <section id="latest" class="article-list">
+        <h2>Latest Updates</h2>
+        <div class="article">
+          <h3>Lords Test Ends Dramatically</h3>
+          <p class="meta">Jul 21, 2025</p>
+          <p class="summary">An intense showdown saw Team A clinch the title in the final day.</p>
+        </div>
+        <div class="article">
+          <h3>Shubman Gill Sets New Record</h3>
+          <p class="meta">Jul 20, 2025</p>
+          <p class="summary">Bumrah in Akash out.</p>
+        </div>
+      </section>
+
+      <section id="articles" class="article-list">
+        <h2>Featured Articles</h2>
+        <div class="article">
+          <h3>Top Tactics That Will Help INDIA Win the Game</h3>
+          <p class="meta">By Analyst Pranvat Johar • Jul 22, 2025</p>
+          <p class="summary">Nitish Reddy ruled out.</p>
+        </div>
+        <div class="article">
+          <h3>Preview: Shubman Gill vs Ben Stokes</h3>
+          <p class="meta">By Staff • Jul 18, 2025</p>
+          <p class="summary">A preview of tomorrow’s high-stakes final between the league’s top teams.</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="trending-topics">
+      <h2>Trending Topics</h2>
+      <ul>
+        <li>
+          <a href="#">IND vs ENG: Final Day Drama</a>
+          <p>A thrilling conclusion saw India and England level their series at 1–1.</p>
+        </li>
+        <li>
+          <a href="#">Shubman Gill's Record-Breaking Innings</a>
+          <p>Gill's stellar performance set a new benchmark in Indian cricket.</p>
+        </li>
+        <li>
+          <a href="#">Team A's Unlikely Victory</a>
+          <p>An underdog team clinched the championship in a nail-biting finish.</p>
+        </li>
+        <li>
+          <a href="#">Bumrah's Return to Form</a>
+          <p>Jasprit Bumrah's resurgence bolstered India's bowling attack.</p>
+        </li>
+        <li>
+          <a href="#">Akash's Injury Update</a>
+          <p>Akash's injury raises concerns ahead of the upcoming series.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 
+  </footer>
+
+</body>
+</html>
+
+</body>
+</html>
